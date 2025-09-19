@@ -359,34 +359,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = global_edicts_commander_events.8.dee
-		hidden_effect = {
-			country_event = {
-				id = global_edict_commander_option_events.27
-			}
-		}
-	}
-	option = {
-		name = global_edicts_commander_events.8.e
-		hidden_effect = {
-			country_event = {
-				id = global_edict_commander_option_events.28
-			}
-		}
-	}
-	option = {
 		name = global_edicts_commander_events.8.f
 		hidden_effect = {
 			country_event = {
 				id = global_edict_commander_option_events.29
-			}
-		}
-	}
-	option = {
-		name = global_edicts_commander_events.8.g		# Advanced Config
-		hidden_effect = {
-			country_event = {
-				id = global_edicts_commander_trade_config_events.1
 			}
 		}
 	}

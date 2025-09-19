@@ -1715,68 +1715,6 @@ country_event = {
 			}
 		}
 	}
-	# Option 4 (dee) - Not Selected
-	option = {
-		name = global_edicts_commander_events.8.dee
-		trigger = {
-			hidden_trigger = {
-				NOT = {
-					has_country_flag = quick_select_protect_trade_4
-				}
-			}
-		}
-		hidden_effect = {
-			set_protect_trade_quick_select = {
-				n = 4
-			}
-		}
-	}
-	# Option 4 (dee) - Selected
-	option = {
-		name = global_edicts_commander_events.8.dee
-		highlight = yes
-		trigger = {
-			hidden_trigger = {
-				has_country_flag = quick_select_protect_trade_4
-			}
-		}
-		hidden_effect = {
-			set_protect_trade_quick_select = {
-				n = 4
-			}
-		}
-	}
-	# Option 5 (e) - Not Selected
-	option = {
-		name = global_edicts_commander_events.8.e
-		trigger = {
-			hidden_trigger = {
-				NOT = {
-					has_country_flag = quick_select_protect_trade_5
-				}
-			}
-		}
-		hidden_effect = {
-			set_protect_trade_quick_select = {
-				n = 5
-			}
-		}
-	}
-	# Option 5 (e) - Selected
-	option = {
-		name = global_edicts_commander_events.8.e
-		highlight = yes
-		trigger = {
-			hidden_trigger = {
-				has_country_flag = quick_select_protect_trade_5
-			}
-		}
-		hidden_effect = {
-			set_protect_trade_quick_select = {
-				n = 5
-			}
-		}
-	}
 	# Option 6 (f) - Not Selected
 	option = {
 		name = global_edicts_commander_events.8.f
