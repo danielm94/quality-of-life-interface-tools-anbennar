@@ -8,6 +8,9 @@ custom_button = {
 			NOT = {
 				has_country_flag = parliament_macro_event_open
 			}
+			NOT = {
+				has_country_flag = cant_manually_add_parliament_seats
+			}
 		}
 	}
 	effect = {
