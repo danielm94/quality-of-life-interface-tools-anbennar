@@ -119,7 +119,7 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
-		
+		NOT = { has_country_flag = estate_privileges_and_agendas_events.2_not_interested }
 		NOT = { crown_land_share = 11 }
 		OR = {
 			AND = {
@@ -251,6 +251,12 @@ country_event = {
 
 	option = { # Refuse the Bail Out
 		name = estate_privileges_and_agendas_events.2.b
+	}
+	option = {
+		name = estate_privileges_and_agendas_events.2.c
+		highlight = yes
+		set_country_flag = estate_privileges_and_agendas_events.2_not_interested
+		custom_tooltip = estate_privileges_and_agendas_events.2_tooltip
 	}
 }
 
