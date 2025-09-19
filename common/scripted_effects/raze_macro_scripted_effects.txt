@@ -1,40 +1,85 @@
 #on_raze on actions must go here as well if you want them to be executed when using the raze utility.
 execute_razed_province_on_actions = {
-	vanilla_on_raze_effect = yes
-}
-
-vanilla_on_raze_effect = {
 	add_permanent_province_modifier = {
 		name = province_razed
 		duration = 7300
 	}
+	if = {
+		limit = { owner = { NOT = { has_estate_privilege = xhazobkult_ritualized_cleansing has_estate_privilege = xhazobkult_ritualized_cleansing_clergy } } }
+		xhazobkult_terrain_razing = yes
+	}
 	owner = {
 		change_variable = {
-			which = HordeProvincesRazed
+			which = nbProvincesRazed
+			value = 1
+		}
+		change_variable = {
+			which = nbProvincesRazedByRuler
 			value = 1
 		}
 	}
-	if = {
-		limit = {
-			has_tax_building_trigger = yes
-			owner = {
-				has_country_flag = tatars_curch_raze_flag
-			}
+	owner = {
+		if = {
+			limit = { has_country_flag = rakkaz_gain_more_demonic_power }
+			add_patriarch_authority = 0.005
 		}
-		owner = {
-			add_treasury = 10
+		if = {
+			limit = { religion = kvangahga }
+			add_church_power = 3
+		}
+		if = {
+			limit = {
+				has_country_flag = unlocked_reaver_personality_flag
+				NOT = { ruler_has_personality = reaver_personality }
+				check_variable = {
+					which = nbProvincesRazedByRuler
+					value = 30
+				}
+			}
+			force_add_ruler_personality = { personality = reaver_personality }
 		}
 	}
 	if = {
 		limit = {
-			owner = {
-				has_country_flag = hordes_unlock_tribes_loyalty_through_razing_flag
-			}
+			owner = {has_government_attribute = scourge_of_irdaeos_reform_raze_effect}
+			has_province_modifier = base_nomadic_zone_of_control
 		}
-		owner = {
-			add_estate_loyalty = {
-				estate = estate_nomadic_tribes
-				loyalty = 1
+		export_to_variable = {
+    		which = scourgeDev
+    		value = development
+    		who = ROOT
+		}
+		while = {
+            limit = {
+                #While our total dip value has 1, lower dip power by 1.
+                check_variable = {
+                    which = scourgeDev
+                    value = 1
+                }
+            }
+            owner = {
+				add_treasury = 5
+			}
+            subtract_variable = {
+                which = scourgeDev
+                value = 1
+            }
+        }
+	}
+	if = {
+		limit = { owner = { has_country_flag = rakkaz_church_power_on_raze } }
+		owner = { add_church_power = 3 }
+	}
+	if = {
+		limit = { owner = { has_country_flag = rakkaz_more_devastation } }
+		add_devastation = 10
+	}
+	owner = { #Saqraxat
+		if = {
+			limit = { has_country_modifier = L04_let_slip_the_hounds }
+			extend_country_modifier = {
+				name = L04_let_slip_the_hounds
+				duration = 365
 			}
 		}
 	}
