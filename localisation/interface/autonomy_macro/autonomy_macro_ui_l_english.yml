@@ -3,7 +3,7 @@
  autonomy_macro_lower_autonomy_button_text_loc: "Lower Autonomy"
  autonomy_macro_min_difference_text_loc: "§YMinimum Reduction§!"
  autonomy_macro_min_development_text_loc: "§YMinimum Development§!"
- autonomy_macro_lower_autonomy_button_tt: "Lowers the autonomy in every province that:\n• Has at least §Y[From.autonomy_macro_minimum_development.GetValue]§! development.\n• Would have its §Yautonomy reduced§! by at least §Y[From.minimum_autonomy_difference.GetValue]§!.\n• Could have its autonomy reduced in accordance with the game rules."
+ autonomy_macro_lower_autonomy_button_tt: "Lowers the autonomy in every province that:\n- Has at least §Y[From.autonomy_macro_minimum_development.GetValue]§! development.\n- Would have its §Yautonomy reduced§! by at least §Y[From.minimum_autonomy_difference.GetValue]§!.\n- Could have its autonomy reduced in accordance with the game rules."
  autonomy_macro_min_development_lower_button_tt: "Shortcut:§Y Ctrl+Shift+;§! -§G10§!\nShortcut:§Y Shift+;§! -§G5§!"
  autonomy_macro_lower_button_effect_tt: "Decreases the minimum development by §G1§!"
  autonomy_macro_min_development_raise_button_tt: "Shortcut:§Y Ctrl+Shift+'§! +§G10§!\nShortcut:§Y Shift+'§! +§G5§!"
