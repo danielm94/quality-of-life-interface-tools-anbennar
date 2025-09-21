@@ -3,6 +3,8 @@
 #
 # For example, let's say that I always want to enable the "Encourage Development" edict whenever I develop a province in all of my games.
 # To do that, make sure the code below in the "on_startup" block has "set_country_flag = reactive_edict_development_setter"  and not "# set_country_flag = reactive_edict_development_setter"
+# 
+# Do note that whenever the mod is updated whether it be through Steam Workshop or you pulling the latest changes from GitHub, this config will revert to its default state and you will need to reconfigure it.
 on_startup = {
 	if = {
 		limit = {
