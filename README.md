@@ -1,47 +1,75 @@
-![Screenshot of Global Edict Commander](https://raw.githubusercontent.com/danielm94/global-edict-commander/refs/heads/main/thumbnail.png)
+# Quality of Life Interface Tools
 
+Quality of Life Interface Tools is a mod that aims to make the player's life easier, by reducing the amount of needless micromanagement and clicking through clean, intuitive, and responsive interfaces.
 
+# Features
 
-# Global Edict Commander
+## Global Edict Commander
+![Global Edict Commander](https://i.imgur.com/LMuFgiN.png)
 
-A Europa Universalis IV mod that allows you to manage state edicts at a global level through a specialized interface. The mod provides a streamlined way to set or remove edicts across all states without having to open the province interface each time.
+Global Edict Commander is a tool that makes setting state edicts a seamless experience. With just a few clicks, the player can set a variety of different state edicts across multiple continents worth of states.
 
-## Installation
+### Smart Edicts
+![Smart Edicts](https://i.imgur.com/S4otFvH.png)
 
-You can install the mod in two ways: by cloning the repository via Git or by downloading a ZIP file.
+Instead of mindlessly applying state edicts everywhere, or spending a good chunk of time finding the best state for a given edict, the player can use smart edicts to apply state edicts efficiently. All of the state edicts, bar one, have smart edict options available for them.
 
-### 1. Installing via Git
+### Quick Select Options
+![Quick Select Options](https://i.imgur.com/VwjFJpj.png)
 
-1. **Open a terminal** (or command prompt) in the folder where you want to store the mod.
-2. **Clone the repository** using one of the following URLs:
+If you find yourself using a smart edict often, you don't have to go through an event every time just to select it. You can simply go into the **settings** and select which option you want pre-loaded. After selecting the option, it will be executed every time you click the edict button.
 
-   - **SSH**:
-     ```
-     git clone git@github.com:danielm94/global-edict-commander.git
-     ```
-   - **HTTPS**:
-     ```
-     git clone https://github.com/danielm94/global-edict-commander.git
-     ```
+![Quick Select Options Demo](https://i.imgur.com/MeLqRFH.gif)
 
-3. Once the repository is cloned, **copy or move the `global-edict-commander` folder** and the `descriptor.mod` file to your EU4 mods directory, typically found at: `Documents/Paradox Interactive/Europa Universalis IV/mod`
-4. Rename the descriptor.mod file to the `<mod_folder_name_goes_here>.mod`. E.g., if your mod folder is located in `Documents/Paradox Interactive/Europa Universalis IV/mod/global-edict-commander`, then you will name it `global-edict-commander.mod`.
-5. The mod should now be listed as one of the available mods inside of Paradox launcher. Add it to one of your playsets.
+### Reactive Edicts
+Reactive Edicts allow you to configure certain state edicts to be turned on or off in states whenever certain things happen within the game. For example, you can have it automatically turn on the Encourage Development edict in a state whenever you develop a province that's in a state. You can have the Defensive Edict turned on in a state if the state has a fort and a province was sieged by the enemy.
 
-### 2. Installing Without Git
+You can configure which reactive edicts are enabled by default on every game startup by doing the following:
 
-1. **Click “Code”** (the green button) and choose **“Download ZIP”**.
-2. **Extract** the downloaded ZIP file.
-3. **Copy or move the extracted folder** and the `descriptor.mod` to your EU4 mods directory, typically: `Documents/Paradox Interactive/Europa Universalis IV/mod`
-4. Rename the descriptor.mod file to the `<mod_folder_name_goes_here>.mod`. E.g., if your mod folder is located in `Documents/Paradox Interactive/Europa Universalis IV/mod/global-edict-commander`, then you will name it `global-edict-commander.mod`.
-5. The mod should now be listed as one of the available mods inside of Paradox launcher. Add it to one of your playsets.
+1. Navigate to the mod folder (This can be done easily through the Paradox Launcher. Just find the mod in your playset, hover over it with your cursor, click the "..." button that appears, and then click "Show in Folder").
+2. Search for the file `reactive_edict_config.txt` in your system's file manager. Alternatively, navigate to the `common\on_actions` folder.
+3. Open `reactive_edict_config.txt` with a text editor, like Notepad.
+4. The file contains a guide on how to configure reactive edicts for every game, so refer to that from here on.
 
-## Usage
+![Reactive Edicts](https://i.imgur.com/FX9ndTq.png)
 
-- After enabling the mod, load your save or start a new game.
-- Click on a province that you own that is part of a state.
-- On the right hand side of the province window, you will notice a new tab. Click it to open the global edicts window. Alternatively, press shit+d
-- Once the panel is open, you can select an edict by clicking on one of the buttons. If you are unsure which edict is which, you can hover over them for more details.
-- After selecting an edict, it will be applied to every single state in your country. You will not be able to use Global Edict Commander until after a year has passed, much like how state edicts work with vanilla.
+## Global Fort Remover
+![Global Fort Remover](https://i.imgur.com/RvGOMhW.png)
 
-You are free to use my mod in your own mod, so as long as you credit me. This mod is still a work in progress so report any bugs you find here.
+Tired of having to delete hundreds of forts built by the AI every time you finish conquering them so your economy doesn't crash? With this tool you can delete all the forts in your country in just two clicks. You can also whitelist forts you have set up in strategic locations so the tool doesn't delete them.
+
+## Autonomy Lowering Macro
+![Autonomy Lowering Macro](https://i.imgur.com/2Rl6FXH.png)
+
+This tool allows you to lower the autonomy of all possible provinces in just a few clicks. You can also fine tune the search criteria by setting the minimum autonomy reduction required and the minimum development for each province.
+
+## Exploit Development Macro
+![Exploit Development Macro](https://i.imgur.com/nEb7MBm.png)
+
+Save your fingers and your sanity from having to exploit tax in hundreds of provinces and use this tool instead. In one click, you can exploit tax, sailors (lol), or manpower in every single province within your great nation.
+
+## *NEW* Raze Macro
+![Raze Macro](https://i.imgur.com/U503ip0.png)  
+![Raze Macro Example](https://i.imgur.com/p4Stmx3.png)
+
+You can now automatically raze all provinces with a single click.
+
+## *NEW* Parliament Macro
+![Parliament Macro](https://i.imgur.com/k2HvIgV.png)  
+![Parliament Macro Example](https://i.imgur.com/hNTTFUN.png)
+
+You can now assign parliament seats more efficiently using the parliament macro.
+
+# Compatibility
+
+This mod will likely not work with other mods that modify the user interface, specifically if your mod has a modified **_provinceview.gui_** file.
+
+I've made compatibility patches for popular mods, [you can find them here](https://steamcommunity.com/sharedfiles/filedetails/?id=3452570071).
+
+# Permissions
+
+You are free to use the code and assets in this mod for your own mod, so as long as you credit me.
+
+# Credits
+
+[Europa Expanded dev team](https://steamcommunity.com/workshop/filedetails/?id=2164202838) for half state core functionality
