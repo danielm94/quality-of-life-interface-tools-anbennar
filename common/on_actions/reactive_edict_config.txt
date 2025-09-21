@@ -13,22 +13,22 @@ on_startup = {
 				has_country_flag = reactive_edict_config_initialized
 			}
 		}
-		### Clean up Advancement Edict
+		### Clean up Advancement Edict (DO NOT REMOVE THE '###' FROM THIS LINE)
 		# set_country_flag = reactive_edict_advancement_cleanup
 
-		### Set Religious Edict after province is converted
+		### Set Religious Edict after province is converted (DO NOT REMOVE THE '###' FROM THIS LINE)
 		# set_country_flag = reactive_edict_religious_setter
 
-		### Clean up Religious Edict after province is converted
+		### Clean up Religious Edict after province is converted (DO NOT REMOVE THE '###' FROM THIS LINE)
 		# set_country_flag = reactive_edict_religious_cleanup
 
-		### Set Defensive Edict once province is sieged
+		### Set Defensive Edict once province is sieged (DO NOT REMOVE THE '###' FROM THIS LINE)
 		# set_country_flag = reactive_edict_defensive_setter
 
-		### Clean up Defensive Edict once province is sieged
+		### Clean up Defensive Edict once province is sieged (DO NOT REMOVE THE '###' FROM THIS LINE)
 		# set_country_flag = reactive_edict_defensive_cleanup
 
-		### Set Development Edict once province is developed
+		### Set Development Edict once province is developed (DO NOT REMOVE THE '###' FROM THIS LINE)
 		# set_country_flag = reactive_edict_development_setter
 
 	
