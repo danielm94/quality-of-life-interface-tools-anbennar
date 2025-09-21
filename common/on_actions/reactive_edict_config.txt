@@ -1,0 +1,36 @@
+# Configure which reactive edicts you want on by default here.
+# To enable or disable a reactive edict, add or remove the '#' character from the start of the line.
+#
+# For example, let's say that I always want to enable the "Encourage Development" edict whenever I develop a province in all of my games.
+# To do that, make sure the code below in the "on_startup" block has "set_country_flag = reactive_edict_development_setter"  and not "# set_country_flag = reactive_edict_development_setter"
+on_startup = {
+	if = {
+		limit = {
+			ai = no
+			NOT = {
+				has_country_flag = reactive_edict_config_initialized
+			}
+		}
+		### Clean up Advancement Edict
+		# set_country_flag = reactive_edict_advancement_cleanup
+
+		### Set Religious Edict after province is converted
+		# set_country_flag = reactive_edict_religious_setter
+
+		### Clean up Religious Edict after province is converted
+		# set_country_flag = reactive_edict_religious_cleanup
+
+		### Set Defensive Edict once province is sieged
+		# set_country_flag = reactive_edict_defensive_setter
+
+		### Clean up Defensive Edict once province is sieged
+		# set_country_flag = reactive_edict_defensive_cleanup
+
+		### Set Development Edict once province is developed
+		# set_country_flag = reactive_edict_development_setter
+
+	
+		### Ignore this
+		set_country_flag = reactive_edict_config_initialized
+	}
+}
