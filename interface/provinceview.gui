@@ -6702,38 +6702,43 @@ guiTypes = {
 						scripted = yes
 						quadTextureSprite = "GFX_manufactory"
 					}
-
+					guiButtonType= {
+						name = "building_macro_delete_mage_tower"
+						position = { x = 61 y = 420 }
+						quadTextureSprite = "GFX_mage_tower"
+						scripted = yes
+					}
 					guiButtonType = {
 						name = "building_macro_delete_ramparts"
-						position = { x = 61 y = 420 }
+						position = { x = 113 y = 420 }
 						scripted = yes
 						quadTextureSprite = "GFX_ramparts"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_impressment_offices"
-						position = { x = 113 y = 420 }
+						position = { x = 165 y = 420 }
 						scripted = yes
 						quadTextureSprite = "GFX_impressment_offices"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_state_house"
-						position = { x = 165 y = 420 }
+						position = { x = 217 y = 420 }
 						scripted = yes
 						quadTextureSprite = "GFX_state_house"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_soldier_households"
-						position = { x = 217 y = 420 }
+						position = { x = 269 y = 420 }
 						scripted = yes
 						quadTextureSprite = "GFX_soldier_households"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_furnace"
-						position = { x = 269 y = 420 }
+						position = { x = 321 y = 420 }
 						scripted = yes
 						quadTextureSprite = "GFX_furnace"
 					}

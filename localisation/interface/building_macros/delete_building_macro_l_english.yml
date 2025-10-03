@@ -56,3 +56,4 @@
  delete_building_macro_whitelist_button_tt: "This will whitelist the province, preventing the macro from deleting buildings in this province."
  delete_building_macro_unwhitelist_button_tt: "This will unwhitelist the province, allowing the macro to delete buildings in the province again."
  delete_macro_manufactory_specify_tt: "§gYou will be able to specify what kind of manufactory you want to delete in the confirmation event.§!"
+ building_macro_delete_mage_tower_tt: "Delete All §YMage Towers§!"

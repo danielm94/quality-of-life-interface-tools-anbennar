@@ -33,6 +33,7 @@
  delete_building_macro_events.d_state_house: "This will delete every single State House in your country!"
  delete_building_macro_events.d_soldier_households: "This will delete every single Soldier's Household in your country!"
  delete_building_macro_events.d_furnace: "This will delete every single Furnace in your country!"
+ delete_building_macro_events.d_mage_tower: "This will delete every single Mage Tower in your country!"
  delete_building_macro_events.d_manufactory_choice: "Which manufactory do you want to delete, exactly?"
 
  # Manufactory Deletion Options

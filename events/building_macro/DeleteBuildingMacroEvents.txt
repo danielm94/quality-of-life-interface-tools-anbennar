@@ -180,6 +180,12 @@ country_event = {
 		}
 	}
 	desc = {
+		desc = delete_building_macro_events.d_mage_tower
+		trigger = {
+			has_country_flag = delete_building_macro_mage_tower
+		}
+	}
+	desc = {
 		desc = delete_building_macro_events.d_manufactory_choice
 		trigger = {
 			has_country_flag = delete_building_macro_manufactory
@@ -567,6 +573,16 @@ country_event = {
 			building = plantations
 		}
 	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_mage_tower
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = mage_tower
+		}
+	}
 	# "Nevermind" Option
 	option = {
 		name = "nevermind"
@@ -603,5 +619,6 @@ country_event = {
 		clr_country_flag = delete_building_macro_state_house
 		clr_country_flag = delete_building_macro_soldier_households
 		clr_country_flag = delete_building_macro_furnace
+		clr_country_flag = delete_building_macro_mage_tower
 	}
 }
