@@ -29,6 +29,8 @@ set_manufactory_trade_goods_flags = {
 	set_country_flag = build_building_macro_manufactory_paper
 	set_country_flag = build_building_macro_manufactory_gems
 	set_country_flag = build_building_macro_manufactory_cloves
+	set_country_flag = build_building_macro_manufactory_damestear
+	set_country_flag = build_building_macro_manufactory_precursor_relics
 }
 
 #SCOPE = COUNTRY
@@ -62,6 +64,80 @@ clr_manufactory_trade_goods_flags = {
 	clr_country_flag = build_building_macro_manufactory_paper
 	clr_country_flag = build_building_macro_manufactory_gems
 	clr_country_flag = build_building_macro_manufactory_cloves
+	clr_country_flag = build_building_macro_manufactory_damestear
+	clr_country_flag = build_building_macro_manufactory_precursor_relics
+}
+
+#SCOPE = COUNTRY
+set_mage_tower_trade_goods_flags = {
+	set_country_flag = build_building_macro_mage_tower_grain
+	set_country_flag = build_building_macro_mage_tower_wine
+	set_country_flag = build_building_macro_mage_tower_wool
+	set_country_flag = build_building_macro_mage_tower_cloth
+	set_country_flag = build_building_macro_mage_tower_fish
+	set_country_flag = build_building_macro_mage_tower_fur
+	set_country_flag = build_building_macro_mage_tower_salt
+	set_country_flag = build_building_macro_mage_tower_naval_supplies
+	set_country_flag = build_building_macro_mage_tower_copper
+	set_country_flag = build_building_macro_mage_tower_gold
+	set_country_flag = build_building_macro_mage_tower_iron
+	set_country_flag = build_building_macro_mage_tower_slaves
+	set_country_flag = build_building_macro_mage_tower_ivory
+	set_country_flag = build_building_macro_mage_tower_tea
+	set_country_flag = build_building_macro_mage_tower_chinaware
+	set_country_flag = build_building_macro_mage_tower_spices
+	set_country_flag = build_building_macro_mage_tower_coffee
+	set_country_flag = build_building_macro_mage_tower_cotton
+	set_country_flag = build_building_macro_mage_tower_sugar
+	set_country_flag = build_building_macro_mage_tower_tobacco
+	set_country_flag = build_building_macro_mage_tower_cocoa
+	set_country_flag = build_building_macro_mage_tower_silk
+	set_country_flag = build_building_macro_mage_tower_dyes
+	set_country_flag = build_building_macro_mage_tower_tropical_wood
+	set_country_flag = build_building_macro_mage_tower_livestock
+	set_country_flag = build_building_macro_mage_tower_incense
+	set_country_flag = build_building_macro_mage_tower_glass
+	set_country_flag = build_building_macro_mage_tower_paper
+	set_country_flag = build_building_macro_mage_tower_gems
+	set_country_flag = build_building_macro_mage_tower_cloves
+	set_country_flag = build_building_macro_mage_tower_damestear
+	set_country_flag = build_building_macro_mage_tower_precursor_relics
+}
+
+#SCOPE = COUNTRY
+clr_mage_tower_trade_goods_flags = {
+	clr_country_flag = build_building_macro_mage_tower_grain
+	clr_country_flag = build_building_macro_mage_tower_wine
+	clr_country_flag = build_building_macro_mage_tower_wool
+	clr_country_flag = build_building_macro_mage_tower_cloth
+	clr_country_flag = build_building_macro_mage_tower_fish
+	clr_country_flag = build_building_macro_mage_tower_fur
+	clr_country_flag = build_building_macro_mage_tower_salt
+	clr_country_flag = build_building_macro_mage_tower_naval_supplies
+	clr_country_flag = build_building_macro_mage_tower_copper
+	clr_country_flag = build_building_macro_mage_tower_gold
+	clr_country_flag = build_building_macro_mage_tower_iron
+	clr_country_flag = build_building_macro_mage_tower_slaves
+	clr_country_flag = build_building_macro_mage_tower_ivory
+	clr_country_flag = build_building_macro_mage_tower_tea
+	clr_country_flag = build_building_macro_mage_tower_chinaware
+	clr_country_flag = build_building_macro_mage_tower_spices
+	clr_country_flag = build_building_macro_mage_tower_coffee
+	clr_country_flag = build_building_macro_mage_tower_cotton
+	clr_country_flag = build_building_macro_mage_tower_sugar
+	clr_country_flag = build_building_macro_mage_tower_tobacco
+	clr_country_flag = build_building_macro_mage_tower_cocoa
+	clr_country_flag = build_building_macro_mage_tower_silk
+	clr_country_flag = build_building_macro_mage_tower_dyes
+	clr_country_flag = build_building_macro_mage_tower_tropical_wood
+	clr_country_flag = build_building_macro_mage_tower_livestock
+	clr_country_flag = build_building_macro_mage_tower_incense
+	clr_country_flag = build_building_macro_mage_tower_glass
+	clr_country_flag = build_building_macro_mage_tower_paper
+	clr_country_flag = build_building_macro_mage_tower_gems
+	clr_country_flag = build_building_macro_mage_tower_cloves
+	clr_country_flag = build_building_macro_mage_tower_damestear
+	clr_country_flag = build_building_macro_mage_tower_precursor_relics
 }
 
 #SCOPE = COUNTRY
@@ -96,6 +172,8 @@ set_impressment_offices_trade_goods_flags = {
 	set_country_flag = build_building_macro_impressment_offices_paper
 	set_country_flag = build_building_macro_impressment_offices_gems
 	set_country_flag = build_building_macro_impressment_offices_cloves
+	set_country_flag = build_building_macro_impressment_offices_damestear
+	set_country_flag = build_building_macro_impressment_offices_precursor_relics
 }
 
 #SCOPE = COUNTRY
@@ -130,6 +208,8 @@ clr_impressment_offices_trade_goods_flags = {
 	clr_country_flag = build_building_macro_impressment_offices_paper
 	clr_country_flag = build_building_macro_impressment_offices_gems
 	clr_country_flag = build_building_macro_impressment_offices_cloves
+	clr_country_flag = build_building_macro_impressment_offices_damestear
+	clr_country_flag = build_building_macro_impressment_offices_precursor_relics
 }
 
 #SCOPE = COUNTRY
@@ -164,6 +244,8 @@ set_state_house_trade_goods_flags = {
 	set_country_flag = build_building_macro_state_house_paper
 	set_country_flag = build_building_macro_state_house_gems
 	set_country_flag = build_building_macro_state_house_cloves
+	set_country_flag = build_building_macro_state_house_damestear
+	set_country_flag = build_building_macro_state_house_precursor_relics
 }
 
 #SCOPE = COUNTRY
@@ -198,6 +280,8 @@ clr_state_house_trade_goods_flags = {
 	clr_country_flag = build_building_macro_state_house_paper
 	clr_country_flag = build_building_macro_state_house_gems
 	clr_country_flag = build_building_macro_state_house_cloves
+	clr_country_flag = build_building_macro_state_house_damestear
+	clr_country_flag = build_building_macro_state_house_precursor_relics
 }
 
 #SCOPE = COUNTRY
@@ -232,6 +316,8 @@ set_soldiers_households_trade_goods_flags = {
 	set_country_flag = build_building_macro_soldiers_households_paper
 	set_country_flag = build_building_macro_soldiers_households_gems
 	set_country_flag = build_building_macro_soldiers_households_cloves
+	set_country_flag = build_building_macro_soldiers_households_damestear
+	set_country_flag = build_building_macro_soldiers_households_precursor_relics
 }
 
 #SCOPE = COUNTRY
@@ -266,4 +352,6 @@ clr_soldiers_households_trade_goods_flags = {
 	clr_country_flag = build_building_macro_soldiers_households_paper
 	clr_country_flag = build_building_macro_soldiers_households_gems
 	clr_country_flag = build_building_macro_soldiers_households_cloves
+	clr_country_flag = build_building_macro_soldiers_households_damestear
+	clr_country_flag = build_building_macro_soldiers_households_precursor_relics
 }

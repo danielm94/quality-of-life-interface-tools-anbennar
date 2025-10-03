@@ -5798,6 +5798,7 @@ guiTypes = {
 						name = "building_macro_build_mage_tower"
 						position = { x = 61 y = 420 }
 						quadTextureSprite = "GFX_mage_tower"
+						scripted = yes
 					}
 
 					instantTextBoxType={
@@ -5807,18 +5808,19 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "2000¤"
+						text = "§RERROR§!"
+						scripted = yes
 					}
 					guiButtonType = {
 						name = "building_macro_build_ramparts"
-						position = { x = 113 y = 420 } # SHIFTED -> from 61
+						position = { x = 113 y = 420 }
 						scripted = yes
 						quadTextureSprite = "GFX_ramparts"
 					}
 
 					instantTextBoxType={
 						name = "build_building_ramparts_cost"
-						position = {x = 113 y = 470 } # SHIFTED -> from 61
+						position = {x = 113 y = 470 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
@@ -5829,14 +5831,14 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "building_macro_build_impressment_offices"
-						position = { x = 165 y = 420 } # SHIFTED -> from 113
+						position = { x = 165 y = 420 } 
 						scripted = yes
 						quadTextureSprite = "GFX_impressment_offices"
 					}
 
 					instantTextBoxType={
 						name = "build_building_impressment_offices_cost"
-						position = {x = 165 y = 470 } # SHIFTED -> from 113
+						position = {x = 165 y = 470 } 
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
@@ -5847,14 +5849,14 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "building_macro_build_state_house"
-						position = { x = 217 y = 420 } # SHIFTED -> from 165
+						position = { x = 217 y = 420 } 
 						scripted = yes
 						quadTextureSprite = "GFX_state_house"
 					}
 
 					instantTextBoxType={
 						name = "build_building_state_house_cost"
-						position = {x = 217 y = 470 } # SHIFTED -> from 165
+						position = {x = 217 y = 470 } 
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
@@ -5865,14 +5867,14 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "building_macro_build_soldier_households"
-						position = { x = 269 y = 420 } # SHIFTED -> from 217
+						position = { x = 269 y = 420 } 
 						scripted = yes
 						quadTextureSprite = "GFX_soldier_households"
 					}
 
 					instantTextBoxType={
 						name = "build_building_soldier_households_cost"
-						position = {x = 269 y = 470 } # SHIFTED -> from 217
+						position = {x = 269 y = 470 } 
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
@@ -5883,14 +5885,14 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "building_macro_build_furnace"
-						position = { x = 321 y = 420 } # SHIFTED -> from 269
+						position = { x = 321 y = 420 } 
 						scripted = yes
 						quadTextureSprite = "GFX_furnace"
 					}
 
 					instantTextBoxType={
 						name = "build_building_furnace_cost"
-						position = {x = 321 y = 470 } # SHIFTED -> from 269
+						position = {x = 321 y = 470 } 
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128

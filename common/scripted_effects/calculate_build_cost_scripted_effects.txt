@@ -530,6 +530,18 @@ calculate_manufactory_build_cost = {
 		build_cost_var = country_build_cost
 	}
 }
+#SCOPE = COUNTRY
+calculate_mage_tower_build_cost = {
+	export_to_variable = {
+		which = country_build_cost
+		value = modifier:build_cost
+	}
+	calculate_building_action_cost = {
+		base_cost = 500
+		var_name = mage_tower_build_cost
+		build_cost_var = country_build_cost
+	}
+}
 
 #SCOPE = COUNTRY
 calculate_furnace_build_cost = {
@@ -624,6 +636,7 @@ calculate_building_build_costs = {
 		calculate_conscription_center_build_cost = yes
 		calculate_fort_18th_build_cost = yes
 		calculate_manufactory_build_cost = yes
+		calculate_mage_tower_build_cost = yes
 		calculate_furnace_build_cost = yes
 		calculate_ramparts_build_cost = yes
 		calculate_soldier_households_build_cost = yes

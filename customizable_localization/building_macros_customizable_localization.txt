@@ -1202,3 +1202,40 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = build_building_macro_build_mage_tower_tt_loc
+	random = no
+	text = {
+		localisation_key = build_building_macro_build_mage_tower_infinite_tt
+		trigger = {
+			FROM = {
+				is_variable_equal = {
+					which = build_building_quantity
+					value = -1
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = build_building_macro_build_mage_tower_1_tt
+		trigger = {
+			FROM = {
+				is_variable_equal = {
+					which = build_building_quantity
+					value = 1
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = build_building_macro_build_mage_tower_multiple_tt
+		trigger = {
+			FROM = {
+				check_variable = {
+					which = build_building_quantity
+					value = 2
+				}
+			}
+		}
+	}
+}

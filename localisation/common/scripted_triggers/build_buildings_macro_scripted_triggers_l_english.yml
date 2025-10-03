@@ -30,3 +30,4 @@
  can_afford_to_build_soldier_households_tt: "Have at least §Y[This.soldier_households_build_cost.GetValue]§!¤"
  can_afford_to_build_impressment_offices_tt: "Have at least §Y[This.impressment_offices_build_cost.GetValue]§!¤"
  can_afford_to_build_state_house_tt: "Have at least §Y[This.state_house_build_cost.GetValue]§!¤" 
+ can_afford_to_build_mage_tower_tt: "Have at least §Y[This.mage_tower_build_cost.GetValue]§!¤" 

@@ -291,6 +291,20 @@ country_event = {
 		}
 	}
 	option = {
+		name = disable_mage_tower_goods
+		custom_tooltip = disable_mage_tower_goods_tt
+		hidden_effect = {
+			clr_country_flag = build_building_macro_manufactory_damestear
+			clr_country_flag = build_building_macro_manufactory_precursor_relics
+			clr_country_flag = build_building_macro_manufactory_incense
+			clr_country_flag = build_building_macro_manufactory_chinaware
+			clr_country_flag = build_building_macro_manufactory_ivory
+			country_event = {
+				id = building_macro_settings_events.4
+			}
+		}
+	}
+	option = {
 		name = disable_impressment_office_goods
 		custom_tooltip = disable_impressment_office_goods_tt
 		hidden_effect = {
@@ -1373,6 +1387,68 @@ country_event = {
 		}
 	}
 	option = {
+		name = damestear
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_manufactory_damestear
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_manufactory_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.4
+			}
+		}
+	}
+	option = {
+		name = damestear
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_manufactory_damestear
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_manufactory_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.4
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_manufactory_precursor_relics
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_manufactory_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.4
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_manufactory_precursor_relics
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_manufactory_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.4
+			}
+		}
+	}
+	option = {
 		name = BACK
 		hidden_effect = {
 			country_event = {
@@ -1423,6 +1499,20 @@ country_event = {
 			set_country_flag = build_building_macro_impressment_offices_salt
 			set_country_flag = build_building_macro_impressment_offices_naval_supplies
 			set_country_flag = build_building_macro_impressment_offices_tropical_wood
+			country_event = {
+				id = building_macro_settings_events.5
+			}
+		}
+	}
+	option = {
+		name = disable_mage_tower_goods
+		custom_tooltip = disable_mage_tower_goods_tt
+		hidden_effect = {
+			clr_country_flag = build_building_macro_impressment_offices_damestear
+			clr_country_flag = build_building_macro_impressment_offices_precursor_relics
+			clr_country_flag = build_building_macro_impressment_offices_incense
+			clr_country_flag = build_building_macro_impressment_offices_chinaware
+			clr_country_flag = build_building_macro_impressment_offices_ivory
 			country_event = {
 				id = building_macro_settings_events.5
 			}
@@ -2414,6 +2504,68 @@ country_event = {
 		}
 	}
 	option = {
+		name = damestear
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_impressment_offices_damestear
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_impressment_offices_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.5
+			}
+		}
+	}
+	option = {
+		name = damestear
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_impressment_offices_damestear
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_impressment_offices_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.5
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_impressment_offices_precursor_relics
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_impressment_offices_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.5
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_impressment_offices_precursor_relics
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_impressment_offices_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.5
+			}
+		}
+	}
+	option = {
 		name = BACK
 		hidden_effect = {
 			country_event = {
@@ -2463,6 +2615,20 @@ country_event = {
 			set_country_flag = build_building_macro_state_house_paper
 			set_country_flag = build_building_macro_state_house_glass
 			set_country_flag = build_building_macro_state_house_gems
+			country_event = {
+				id = building_macro_settings_events.6
+			}
+		}
+	}
+	option = {
+		name = disable_mage_tower_goods
+		custom_tooltip = disable_mage_tower_goods_tt
+		hidden_effect = {
+			clr_country_flag = build_building_macro_state_house_damestear
+			clr_country_flag = build_building_macro_state_house_precursor_relics
+			clr_country_flag = build_building_macro_state_house_incense
+			clr_country_flag = build_building_macro_state_house_chinaware
+			clr_country_flag = build_building_macro_state_house_ivory
 			country_event = {
 				id = building_macro_settings_events.6
 			}
@@ -3455,6 +3621,68 @@ country_event = {
 		}
 	}
 	option = {
+		name = damestear
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_state_house_damestear
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_state_house_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.6
+			}
+		}
+	}
+	option = {
+		name = damestear
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_state_house_damestear
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_state_house_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.6
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_state_house_precursor_relics
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_state_house_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.6
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_state_house_precursor_relics
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_state_house_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.6
+			}
+		}
+	}
+	option = {
 		name = BACK
 		hidden_effect = {
 			country_event = {
@@ -3505,6 +3733,20 @@ country_event = {
 			set_country_flag = build_building_macro_soldiers_households_fish
 			set_country_flag = build_building_macro_soldiers_households_livestock
 			set_country_flag = build_building_macro_soldiers_households_wine
+			country_event = {
+				id = building_macro_settings_events.7
+			}
+		}
+	}
+	option = {
+		name = disable_mage_tower_goods
+		custom_tooltip = disable_mage_tower_goods_tt
+		hidden_effect = {
+			clr_country_flag = build_building_macro_soldiers_households_damestear
+			clr_country_flag = build_building_macro_soldiers_households_precursor_relics
+			clr_country_flag = build_building_macro_soldiers_households_incense
+			clr_country_flag = build_building_macro_soldiers_households_chinaware
+			clr_country_flag = build_building_macro_soldiers_households_ivory
 			country_event = {
 				id = building_macro_settings_events.7
 			}
@@ -4496,6 +4738,68 @@ country_event = {
 		}
 	}
 	option = {
+		name = damestear
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_soldiers_households_damestear
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_soldiers_households_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.7
+			}
+		}
+	}
+	option = {
+		name = damestear
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_soldiers_households_damestear
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_soldiers_households_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.7
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_soldiers_households_precursor_relics
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_soldiers_households_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.7
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_soldiers_households_precursor_relics
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_soldiers_households_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.7
+			}
+		}
+	}
+	option = {
 		name = BACK
 		hidden_effect = {
 			country_event = {
@@ -4554,6 +4858,1123 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = building_macro_settings_events.1
+			}
+		}
+	}
+}
+
+#Mage Tower Settings Event
+country_event = {
+	id = building_macro_settings_duplicate_events.9
+	title = building_macro_settings_events.9.t	# You will need to create localization for this
+	desc = building_macro_settings_events.9.d	# And this
+	picture = SCIENTISTS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = BACK
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.3
+			}
+		}
+	}
+	option = {
+		name = enable_all
+		hidden_effect = {
+			set_mage_tower_trade_goods_flags = yes
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = disable_all
+		hidden_effect = {
+			clr_mage_tower_trade_goods_flags = yes
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = enable_mage_tower_goods
+		custom_tooltip = enable_mage_tower_goods_tt
+		hidden_effect = {
+			set_country_flag = build_building_macro_mage_tower_damestear
+			set_country_flag = build_building_macro_mage_tower_precursor_relics
+			set_country_flag = build_building_macro_mage_tower_incense
+			set_country_flag = build_building_macro_mage_tower_chinaware
+			set_country_flag = build_building_macro_mage_tower_ivory
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = disable_impressment_office_goods
+		custom_tooltip = disable_impressment_office_goods_tt
+		hidden_effect = {
+			clr_country_flag = build_building_macro_mage_tower_fish
+			clr_country_flag = build_building_macro_mage_tower_salt
+			clr_country_flag = build_building_macro_mage_tower_naval_supplies
+			clr_country_flag = build_building_macro_mage_tower_tropical_wood
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = disable_state_house_goods
+		custom_tooltip = disable_state_house_goods_tt
+		hidden_effect = {
+			clr_country_flag = build_building_macro_mage_tower_paper
+			clr_country_flag = build_building_macro_mage_tower_glass
+			clr_country_flag = build_building_macro_mage_tower_gems
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = disable_soldiers_households_goods
+		custom_tooltip = disable_soldiers_households_goods_tt
+		hidden_effect = {
+			clr_country_flag = build_building_macro_mage_tower_grain
+			clr_country_flag = build_building_macro_mage_tower_fish
+			clr_country_flag = build_building_macro_mage_tower_livestock
+			clr_country_flag = build_building_macro_mage_tower_wine
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Grain
+	option = {
+		name = grain
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_grain
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_grain
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = grain
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_grain
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_grain
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Wine
+	option = {
+		name = wine
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_wine
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_wine
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = wine
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_wine
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_wine
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Wool
+	option = {
+		name = wool
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_wool
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_wool
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = wool
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_wool
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_wool
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Cloth
+	option = {
+		name = cloth
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_cloth
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cloth
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = cloth
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_cloth
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cloth
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Fish
+	option = {
+		name = fish
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_fish
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_fish
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = fish
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_fish
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_fish
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Fur
+	option = {
+		name = fur
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_fur
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_fur
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = fur
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_fur
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_fur
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Salt
+	option = {
+		name = salt
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_salt
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_salt
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = salt
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_salt
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_salt
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Naval Supplies
+	option = {
+		name = naval_supplies
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_naval_supplies
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_naval_supplies
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = naval_supplies
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_naval_supplies
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_naval_supplies
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Copper
+	option = {
+		name = copper
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_copper
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_copper
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = copper
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_copper
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_copper
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Gold
+	option = {
+		name = gold
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_gold
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_gold
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = gold
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_gold
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_gold
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Iron
+	option = {
+		name = iron
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_iron
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_iron
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = iron
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_iron
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_iron
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Slaves
+	option = {
+		name = slaves
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_slaves
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_slaves
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = slaves
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_slaves
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_slaves
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Ivory
+	option = {
+		name = ivory
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_ivory
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_ivory
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = ivory
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_ivory
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_ivory
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Tea
+	option = {
+		name = tea
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_tea
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_tea
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = tea
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_tea
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_tea
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Chinaware
+	option = {
+		name = chinaware
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_chinaware
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_chinaware
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = chinaware
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_chinaware
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_chinaware
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Spices
+	option = {
+		name = spices
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_spices
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_spices
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = spices
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_spices
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_spices
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Coffee
+	option = {
+		name = coffee
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_coffee
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_coffee
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = coffee
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_coffee
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_coffee
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Cotton
+	option = {
+		name = cotton
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_cotton
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cotton
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = cotton
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_cotton
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cotton
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Sugar
+	option = {
+		name = sugar
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_sugar
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_sugar
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = sugar
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_sugar
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_sugar
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Tobacco
+	option = {
+		name = tobacco
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_tobacco
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_tobacco
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = tobacco
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_tobacco
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_tobacco
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Cocoa
+	option = {
+		name = cocoa
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_cocoa
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cocoa
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = cocoa
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_cocoa
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cocoa
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Silk
+	option = {
+		name = silk
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_silk
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_silk
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = silk
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_silk
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_silk
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Dyes
+	option = {
+		name = dyes
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_dyes
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_dyes
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = dyes
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_dyes
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_dyes
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Tropical Wood
+	option = {
+		name = tropical_wood
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_tropical_wood
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_tropical_wood
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = tropical_wood
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_tropical_wood
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_tropical_wood
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Livestock
+	option = {
+		name = livestock
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_livestock
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_livestock
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = livestock
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_livestock
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_livestock
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Incense
+	option = {
+		name = incense
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_incense
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_incense
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = incense
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_incense
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_incense
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Glass
+	option = {
+		name = glass
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_glass
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_glass
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = glass
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_glass
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_glass
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Paper
+	option = {
+		name = paper
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_paper
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_paper
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = paper
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_paper
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_paper
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Gems
+	option = {
+		name = gems
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_gems
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_gems
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = gems
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_gems
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_gems
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	# Cloves
+	option = {
+		name = cloves
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_cloves
+		}
+		highlight = yes
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cloves
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = cloves
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_cloves
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_cloves
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = damestear
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_damestear
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = damestear
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_damestear
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_damestear
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		highlight = yes
+		trigger = {
+			has_country_flag = build_building_macro_mage_tower_precursor_relics
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = precursor_relics
+		trigger = {
+			NOT = {
+				has_country_flag = build_building_macro_mage_tower_precursor_relics
+			}
+		}
+		toggle_country_flag = {
+			flag = build_building_macro_mage_tower_precursor_relics
+		}
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.9
+			}
+		}
+	}
+	option = {
+		name = BACK
+		hidden_effect = {
+			country_event = {
+				id = building_macro_settings_events.3
 			}
 		}
 	}

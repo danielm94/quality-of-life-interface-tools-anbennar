@@ -987,6 +987,41 @@ custom_button = {
 		}
 	}
 }
+custom_button = {
+	name = building_macro_build_mage_tower
+	tooltip = building_macro_build_mage_tower_tt
+	potential = {
+	}
+	trigger = {
+		FROM = {
+			can_afford_to_build_mage_tower = yes
+			any_owned_province = {
+				can_build = mage_tower
+				NOT = {
+					has_construction = any
+				}
+				is_enabled_trade_good_mage_tower_build_building_macro = yes
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_build_building_macro
+				}
+			}
+			custom_tooltip = building_macro_strategy_lowest_development_cost_tt
+		}
+		else = {
+			custom_tooltip = building_macro_strategy_anywhere_possible_tt
+		}
+		custom_tooltip = building_macro_construction_logic_tt
+		FROM = {
+			build_mage_tower_macro_effect = yes
+		}
+	}
+}
 
 custom_button = {
 	name = building_macro_build_ramparts
@@ -1413,6 +1448,12 @@ custom_text_box = {
 
 custom_text_box = {
 	name = build_building_furnace_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = build_building_mage_tower_cost
 	potential = {
 	}
 	tooltip = empty_text

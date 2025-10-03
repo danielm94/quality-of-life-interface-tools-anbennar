@@ -21,6 +21,7 @@ setup_build_building_macro = {
 			n = -1
 		}
 		set_manufactory_trade_goods_flags = yes
+		set_mage_tower_trade_goods_flags = yes
 		set_impressment_offices_trade_goods_flags = yes
 		set_state_house_trade_goods_flags = yes
 		set_soldiers_households_trade_goods_flags = yes
@@ -138,6 +139,67 @@ build_manufactories_macro_effect = {
 						is_enabled_trade_good_manufactories_build_building_macro = yes
 					}
 					add_manufactory_construction = yes
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = build_building_quantity
+						value = 0
+					}
+				}
+				subtract_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+#SCOPE = COUNTRY
+build_mage_tower_macro_effect = {
+	hidden_effect = {
+		calculate_building_build_costs = yes
+		set_variable = {
+			which = iteration_counter
+			which = build_building_quantity
+		}
+		while = {
+			limit = {
+				can_afford_to_build_mage_tower = yes
+				any_owned_province = {
+					can_build = mage_tower
+					is_enabled_trade_good_mage_tower_build_building_macro = yes
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = build_building_quantity
+							value = 0
+						}
+					}
+					check_variable = {
+						which = iteration_counter
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = enable_smart_build_building_macro
+				}
+				build_mage_tower_lowest_development_cost = yes
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						can_build = mage_tower
+						is_enabled_trade_good_mage_tower_build_building_macro = yes
+					}
+					add_building_construction = {
+						building = mage_tower
+					}
 				}
 			}
 			if = {
@@ -290,7 +352,7 @@ build_state_house_macro_effect = {
 				can_afford_to_build_state_house = yes
 				any_owned_province = {
 					can_build = state_house
-					 is_enabled_trade_good_state_house_build_building_macro = yes
+					is_enabled_trade_good_state_house_build_building_macro = yes
 				}
 				if = {
 					limit = {
@@ -504,6 +566,14 @@ build_buildings_lowest_development_cost = {
 		export_to_variable = {
 			which = province_dev_cost_flat
 			value = modifier:local_development_cost
+		}
+		export_to_variable = {
+			which = province_dev_cost_modifier
+			value = modifier:local_development_cost_modifier
+		}
+		change_variable = {
+			which = province_dev_cost_flat
+			which = province_dev_cost_modifier
 		}
 		if = {
 			limit = {
@@ -1444,5 +1514,67 @@ build_soldiers_households_highest_manpower = {
 	clear_global_event_target = highest_manpower_province
 }
 
-
-#TODO: INTRODUCE GRADING SCORES FOR MANUFACTORIES IN ORDER TO PICK AND CHOOSE WHICH ONES ARE BEST
+#SCOPE = COUNTRY
+build_mage_tower_lowest_development_cost = {
+	every_owned_province = {
+		limit = {
+			can_build = mage_tower
+			is_enabled_trade_good_mage_tower_build_building_macro = yes
+		}
+		export_to_variable = {
+			which = province_dev_cost_flat
+			value = modifier:local_development_cost
+		}
+		export_to_variable = {
+			which = province_dev_cost_modifier
+			value = modifier:local_development_cost_modifier
+		}
+		change_variable = {
+			which = province_dev_cost_flat
+			which = province_dev_cost_modifier
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = damestear
+					trade_goods = precursor_relics
+					trade_goods = incense
+					trade_goods = chinaware
+					trade_goods = ivory
+				}
+			}
+			#Provinces with these trade goods make the manufactory twice as effective.
+			divide_variable = {
+				which = province_dev_cost_flat
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_saved_global_event_target = cheapest_development_cost
+				}
+			}
+			save_global_event_target_as = cheapest_development_cost
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = province_dev_cost_flat
+							which = event_target:cheapest_development_cost
+						}
+					}
+				}
+				save_global_event_target_as = cheapest_development_cost
+			}
+		}
+	}
+	event_target:cheapest_development_cost = {
+		add_building_construction = {
+			building = mage_tower
+		}
+	}
+	clear_global_event_target = cheapest_development_cost
+}
