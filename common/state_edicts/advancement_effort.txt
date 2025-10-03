@@ -10,7 +10,7 @@ edict_advancement_effort = {
 	modifier = {
 		local_institution_spread = 0.33
 	}
-
+	
 	notify_trigger = {
 		FROM = {
 			current_institution = 100
@@ -18,6 +18,49 @@ edict_advancement_effort = {
 	}
 	
 	color = { 50 173 192 }
+
+	on_state_edict_enacted = {
+		edict_commander_add_cooldown_to_state = yes
+		if = {
+			limit = {
+				FROM = {
+					tag = A81
+				}
+				ROOT = {
+					area = bennonhill_area
+				}
+			}
+			FROM = {
+				set_country_flag = giberd_bennonhill_advancement_edict
+			}
+		}
+		if = {
+			limit = { FROM = { has_reform = degakheion_karkares_council } }
+			area = {
+				add_province_modifier = {
+					name = G46_improved_advancement_edict
+					duration = -1
+				}
+			}
+		}
+	}
+
+	on_state_edict_revoked = {
+		if = {
+			limit = {
+				FROM = {
+					tag = A81
+				}
+				ROOT = {
+					area = bennonhill_area
+				}
+			}
+			FROM = {
+				clr_country_flag = giberd_bennonhill_advancement_edict
+			}
+		}
+		area = { remove_province_modifier = G46_improved_advancement_edict }
+	}
 	
 	
 	ai_will_do = {
@@ -38,13 +81,8 @@ edict_advancement_effort = {
 		modifier = {
 			factor = 3
 			all_province_in_state = {
-				AND = {
-					current_institution_growth = 0.5
-				}
+				current_institution_growth = 0.5
 			}
 		}
-	}
-	on_state_edict_enacted = {
-		edict_commander_add_cooldown_to_state = yes
 	}
 }

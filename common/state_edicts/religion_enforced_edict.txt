@@ -1,6 +1,9 @@
 edict_religion_enforced = {
 	potential = {
-		current_age = age_of_reformation
+		OR = {
+			current_age = age_of_reformation
+			current_age = age_of_absolutism	#Anbennar
+		}
 	}
 	
 	allow = {
