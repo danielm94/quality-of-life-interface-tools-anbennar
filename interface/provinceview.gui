@@ -5078,7 +5078,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5096,7 +5096,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5120,7 +5120,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5167,7 +5167,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5185,7 +5185,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5209,7 +5209,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5254,7 +5254,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5272,7 +5272,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5296,7 +5296,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5314,7 +5314,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5361,7 +5361,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5379,7 +5379,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5430,7 +5430,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5448,7 +5448,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5472,7 +5472,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5490,7 +5490,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5537,7 +5537,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5555,7 +5555,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5606,7 +5606,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5624,7 +5624,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5648,7 +5648,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5672,7 +5672,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5721,7 +5721,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5739,7 +5739,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5789,7 +5789,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5808,7 +5808,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 					guiButtonType = {
@@ -5825,7 +5825,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5843,7 +5843,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5861,7 +5861,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5879,7 +5879,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5897,7 +5897,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 					guiButtonType = {
