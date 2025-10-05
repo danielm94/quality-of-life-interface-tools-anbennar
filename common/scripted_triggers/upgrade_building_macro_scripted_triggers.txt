@@ -119,3 +119,11 @@ can_afford_to_upgrade_naval_battery = {
 		price_var = naval_battery_upgrade_cost
 	}
 }
+
+#SCOPE = COUNTRY
+upgrade_building_macro_quantity_equals = {
+	is_variable_equal = {
+		which = upgrade_building_quantity
+		value = $n$
+	}
+}

@@ -240,3 +240,4 @@
  building_macro_strategy_state_house_tt: "State Houses will be constructed in eligible provinces with the §Yhighest governing cost§! first."
  building_macro_strategy_soldier_households_tt: "Soldier's Households will be constructed in eligible provinces with the §Yhighest manpower§! first."
  building_macro_cancel_button_tt: "Click here to cancel all or some building construction."
+ building_macro_settings_button_tt: "Click here to configure how the macro builds buildings."

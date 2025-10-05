@@ -1,8 +1,26 @@
 #SCOPE = COUNTRY
 upgrade_all_trade_buildings_to_trade_depots = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_trade_depot = yes
 			any_owned_province = {
 				has_building = marketplace
@@ -11,7 +29,37 @@ upgrade_all_trade_buildings_to_trade_depots = {
 				}
 			}
 		}
-		upgrade_highest_trade_value_province_to_trade_depot = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_trade_value_province_to_trade_depot = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = marketplace
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = trade_depot
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -58,9 +106,27 @@ upgrade_highest_trade_value_province_to_trade_depot = {
 
 #SCOPE = COUNTRY
 upgrade_all_trade_buildings_to_stock_exchanges = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_stock_exchange = yes
 			any_owned_province = {
 				OR = {
@@ -72,7 +138,40 @@ upgrade_all_trade_buildings_to_stock_exchanges = {
 				}
 			}
 		}
-		upgrade_highest_trade_value_province_to_stock_exchange = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_trade_value_province_to_stock_exchange = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+					}
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = stock_exchange
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -122,9 +221,27 @@ upgrade_highest_trade_value_province_to_stock_exchange = {
 
 #SCOPE = COUNTRY
 upgrade_all_government_buildings_to_town_halls = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_town_hall = yes
 			any_owned_province = {
 				has_building = courthouse
@@ -133,7 +250,37 @@ upgrade_all_government_buildings_to_town_halls = {
 				}
 			}
 		}
-		upgrade_highest_gov_cost_province_to_town_hall = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_gov_cost_province_to_town_hall = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = courthouse
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = town_hall
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -200,9 +347,27 @@ upgrade_highest_gov_cost_province_to_town_hall = {
 
 #SCOPE = COUNTRY
 upgrade_all_dock_buildings_to_dry_docks = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_drydock = yes
 			any_owned_province = {
 				has_building = dock
@@ -211,7 +376,37 @@ upgrade_all_dock_buildings_to_dry_docks = {
 				}
 			}
 		}
-		upgrade_highest_sailor_province_to_dry_dock = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_sailor_province_to_dry_dock = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = dock
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = drydock
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -287,9 +482,27 @@ upgrade_highest_sailor_province_to_dry_dock = {
 
 #SCOPE = COUNTRY
 upgrade_all_shipyard_buildings_to_grand_shipyards = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_grand_shipyard = yes
 			any_owned_province = {
 				has_building = shipyard
@@ -298,7 +511,37 @@ upgrade_all_shipyard_buildings_to_grand_shipyards = {
 				}
 			}
 		}
-		upgrade_lowest_autonomy_province_to_grand_shipyard = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_lowest_autonomy_province_to_grand_shipyard = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = shipyard
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = grand_shipyard
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -347,9 +590,27 @@ upgrade_lowest_autonomy_province_to_grand_shipyard = {
 
 #SCOPE = COUNTRY
 upgrade_all_workshop_buildings_to_counting_houses = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_counting_house = yes
 			any_owned_province = {
 				has_building = workshop
@@ -358,7 +619,37 @@ upgrade_all_workshop_buildings_to_counting_houses = {
 				}
 			}
 		}
-		upgrade_highest_production_province_to_counting_house = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_production_province_to_counting_house = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = workshop
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = counting_house
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -464,9 +755,27 @@ upgrade_highest_production_province_to_counting_house = {
 
 #SCOPE = COUNTRY
 upgrade_all_manpower_buildings_to_training_fields = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_training_fields = yes
 			any_owned_province = {
 				has_building = barracks
@@ -475,7 +784,37 @@ upgrade_all_manpower_buildings_to_training_fields = {
 				}
 			}
 		}
-		upgrade_highest_manpower_province_to_training_fields = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_manpower_province_to_training_fields = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = barracks
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = training_fields
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -563,9 +902,27 @@ upgrade_highest_manpower_province_to_training_fields = {
 
 #SCOPE = COUNTRY
 upgrade_all_force_limit_buildings_to_conscription_center = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_conscription_center = yes
 			any_owned_province = {
 				has_building = regimental_camp
@@ -574,7 +931,37 @@ upgrade_all_force_limit_buildings_to_conscription_center = {
 				}
 			}
 		}
-		upgrade_lowest_autonomy_province_to_conscription_center = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_lowest_autonomy_province_to_conscription_center = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = regimental_camp
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = conscription_center
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -623,9 +1010,27 @@ upgrade_lowest_autonomy_province_to_conscription_center = {
 
 #SCOPE = COUNTRY
 upgrade_all_tax_buildings_to_cathedrals = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_cathedral = yes
 			any_owned_province = {
 				has_building = temple
@@ -634,7 +1039,37 @@ upgrade_all_tax_buildings_to_cathedrals = {
 				}
 			}
 		}
-		upgrade_highest_tax_province_to_cathedral = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_tax_province_to_cathedral = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = temple
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = cathedral
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -738,9 +1173,27 @@ upgrade_highest_tax_province_to_cathedral = {
 
 #SCOPE = COUNTRY
 upgrade_all_fort_buildings_to_level_4_fort = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_fort_16th = yes
 			any_owned_province = {
 				has_building = fort_15th
@@ -749,30 +1202,59 @@ upgrade_all_fort_buildings_to_level_4_fort = {
 				}
 			}
 		}
-		#Always prioritize capital
 		if = {
 			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						has_building = fort_15th
+						NOT = {
+							has_construction = any
+						}
+					}
+				}
 				capital_scope = {
+					add_building_construction = {
+						building = fort_16th
+					}
+				}
+			}
+			else = {
+				upgrade_most_defensive_province_to_level_4_fort = yes
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
 					has_building = fort_15th
 					NOT = {
 						has_construction = any
 					}
 				}
-			}
-			capital_scope = {
 				add_building_construction = {
 					building = fort_16th
 				}
 			}
 		}
-		else = {
-			upgrade_least_defensive_province_to_level_4_fort = yes
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
 		}
 	}
 }
 
 #SCOPE = COUNTRY
-upgrade_least_defensive_province_to_level_4_fort = {
+upgrade_most_defensive_province_to_level_4_fort = {
 	every_owned_province = {
 		limit = {
 			has_building = fort_15th
@@ -787,38 +1269,54 @@ upgrade_least_defensive_province_to_level_4_fort = {
 		if = {
 			limit = {
 				NOT = {
-					has_saved_global_event_target = least_defensive_province
+					has_saved_global_event_target = most_defensive_province
 				}
 			}
-			save_global_event_target_as = least_defensive_province
+			save_global_event_target_as = most_defensive_province
 		}
 		else = {
 			if = {
 				limit = {
-					NOT = {
-						check_variable = {
-							which = def
-							which = event_target:least_defensive_province
-						}
+					check_variable = {
+						which = def
+						which = event_target:most_defensive_province
 					}
 				}
-				save_global_event_target_as = least_defensive_province
+				save_global_event_target_as = most_defensive_province
 			}
 		}
 	}
-	event_target:least_defensive_province = {
+	event_target:most_defensive_province = {
 		add_building_construction = {
 			building = fort_16th
 		}
 	}
-	clear_global_event_target = least_defensive_province
+	clear_global_event_target = most_defensive_province
 }
 
 #SCOPE = COUNTRY
 upgrade_all_fort_buildings_to_level_6_fort = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_fort_17th = yes
 			any_owned_province = {
 				OR = {
@@ -830,10 +1328,36 @@ upgrade_all_fort_buildings_to_level_6_fort = {
 				}
 			}
 		}
-		#Always prioritize capital
 		if = {
 			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			#Always prioritize capital
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							has_building = fort_15th
+							has_building = fort_16th
+						}
+						NOT = {
+							has_construction = any
+						}
+					}
+				}
 				capital_scope = {
+					add_building_construction = {
+						building = fort_17th
+					}
+				}
+			}
+			else = {
+				upgrade_most_defensive_province_to_level_6_fort = yes
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
 					OR = {
 						has_building = fort_15th
 						has_building = fort_16th
@@ -842,21 +1366,28 @@ upgrade_all_fort_buildings_to_level_6_fort = {
 						has_construction = any
 					}
 				}
-			}
-			capital_scope = {
 				add_building_construction = {
 					building = fort_17th
 				}
 			}
 		}
-		else = {
-			upgrade_least_defensive_province_to_level_6_fort = yes
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
 		}
 	}
 }
 
 #SCOPE = COUNTRY
-upgrade_least_defensive_province_to_level_6_fort = {
+upgrade_most_defensive_province_to_level_6_fort = {
 	every_owned_province = {
 		limit = {
 			OR = {
@@ -874,38 +1405,54 @@ upgrade_least_defensive_province_to_level_6_fort = {
 		if = {
 			limit = {
 				NOT = {
-					has_saved_global_event_target = least_defensive_province
+					has_saved_global_event_target = most_defensive_province
 				}
 			}
-			save_global_event_target_as = least_defensive_province
+			save_global_event_target_as = most_defensive_province
 		}
 		else = {
 			if = {
 				limit = {
-					NOT = {
-						check_variable = {
-							which = def
-							which = event_target:least_defensive_province
-						}
+					check_variable = {
+						which = def
+						which = event_target:most_defensive_province
 					}
 				}
-				save_global_event_target_as = least_defensive_province
+				save_global_event_target_as = most_defensive_province
 			}
 		}
 	}
-	event_target:least_defensive_province = {
+	event_target:most_defensive_province = {
 		add_building_construction = {
 			building = fort_17th
 		}
 	}
-	clear_global_event_target = least_defensive_province
+	clear_global_event_target = most_defensive_province
 }
 
 #SCOPE = COUNTRY
 upgrade_all_fort_buildings_to_level_8_fort = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_fort_18th = yes
 			any_owned_province = {
 				OR = {
@@ -918,10 +1465,37 @@ upgrade_all_fort_buildings_to_level_8_fort = {
 				}
 			}
 		}
-		#Always prioritize capital
 		if = {
 			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			#Always prioritize capital
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							has_building = fort_15th
+							has_building = fort_16th
+							has_building = fort_17th
+						}
+						NOT = {
+							has_construction = any
+						}
+					}
+				}
 				capital_scope = {
+					add_building_construction = {
+						building = fort_18th
+					}
+				}
+			}
+			else = {
+				upgrade_most_defensive_province_to_level_8_fort = yes
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
 					OR = {
 						has_building = fort_15th
 						has_building = fort_16th
@@ -931,21 +1505,28 @@ upgrade_all_fort_buildings_to_level_8_fort = {
 						has_construction = any
 					}
 				}
-			}
-			capital_scope = {
 				add_building_construction = {
 					building = fort_18th
 				}
 			}
 		}
-		else = {
-			upgrade_least_defensive_province_to_level_8_fort = yes
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
 		}
 	}
 }
 
 #SCOPE = COUNTRY
-upgrade_least_defensive_province_to_level_8_fort = {
+upgrade_most_defensive_province_to_level_8_fort = {
 	every_owned_province = {
 		limit = {
 			OR = {
@@ -964,38 +1545,54 @@ upgrade_least_defensive_province_to_level_8_fort = {
 		if = {
 			limit = {
 				NOT = {
-					has_saved_global_event_target = least_defensive_province
+					has_saved_global_event_target = most_defensive_province
 				}
 			}
-			save_global_event_target_as = least_defensive_province
+			save_global_event_target_as = most_defensive_province
 		}
 		else = {
 			if = {
 				limit = {
-					NOT = {
-						check_variable = {
-							which = def
-							which = event_target:least_defensive_province
-						}
+					check_variable = {
+						which = def
+						which = event_target:most_defensive_province
 					}
 				}
-				save_global_event_target_as = least_defensive_province
+				save_global_event_target_as = most_defensive_province
 			}
 		}
 	}
-	event_target:least_defensive_province = {
+	event_target:most_defensive_province = {
 		add_building_construction = {
 			building = fort_18th
 		}
 	}
-	clear_global_event_target = least_defensive_province
+	clear_global_event_target = most_defensive_province
 }
 
 #SCOPE = COUNTRY
 upgrade_all_coastal_defenses_to_naval_battery = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_naval_battery = yes
 			any_owned_province = {
 				has_building = coastal_defence
@@ -1004,19 +1601,37 @@ upgrade_all_coastal_defenses_to_naval_battery = {
 				}
 			}
 		}
-		#Always prioritize capital
 		if = {
 			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			#Always prioritize capital
+			if = {
+				limit = {
+					capital_scope = {
+						has_building = coastal_defence
+						NOT = {
+							has_construction = any
+						}
+					}
+				}
 				capital_scope = {
-					has_building = coastal_defence
-					NOT = {
-						has_construction = any
+					add_building_construction = {
+						building = naval_battery
 					}
 				}
 			}
-			capital_scope = {
-				add_building_construction = {
-					building = naval_battery
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = coastal_defence
+						NOT = {
+							has_construction = any
+						}
+					}
+					add_building_construction = {
+						building = naval_battery
+					}
 				}
 			}
 		}
@@ -1033,5 +1648,44 @@ upgrade_all_coastal_defenses_to_naval_battery = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
+	}
+}
+
+#SCOPE = COUNTRY
+#-1 = build until you have no money left
+set_upgrade_building_quantity = {
+	hidden_effect = {
+		set_variable = {
+			which = upgrade_building_quantity
+			value = $n$
+		}
+	}
+}
+
+#SCOPE = COUNTRY
+setup_upgrade_building_macro = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = initialized_upgrade_building_macro
+			}
+		}
+		set_upgrade_building_quantity = {
+			n = -1
+		}
+		set_country_flag = enable_smart_upgrade_building_macro
+		set_country_flag = initialized_upgrade_building_macro
 	}
 }

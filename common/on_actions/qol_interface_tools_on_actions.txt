@@ -1,6 +1,7 @@
 on_startup = {
 	setup_autonomy_macro = yes
 	setup_build_building_macro = yes
+	setup_upgrade_building_macro = yes
 }
 
 on_institution_embracement = {
