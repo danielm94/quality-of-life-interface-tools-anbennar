@@ -1,3 +1,5 @@
+If you like what I do please consider supporting me on [Ko-fi](https://ko-fi.com/danielm94).
+
 # Quality of Life Interface Tools
 
 Quality of Life Interface Tools is a mod that aims to make the player's life easier, by reducing the amount of needless micromanagement and clicking through clean, intuitive, and responsive interfaces.
